@@ -4120,10 +4120,7 @@ img.u-pull-left {
     display : none;
 }
 
-.contact-bottom .contact-block:nth-child(2) {
-    position: relative;
-    left: -130px; /* Ajusta este valor según lo necesites */
-}
+
 
 
 
