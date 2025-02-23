@@ -3413,10 +3413,25 @@ img.u-pull-left {
 
 
 .about-info__pic {
-    flex: 0 0 100%; /* Reduce the image width to 25% of the container */
-    max-width: 570px; /* Limits the maximum width of the image */
-    height: auto; /* Keeps aspect ratio */
+    width: 100%;  /* La imagen ocupa el 100% del contenedor */
+    max-width: 570px;  /* No crece más allá de este tamaño */
+    height: auto;  /* Mantiene la proporción */
+    display: block;  /* Evita márgenes extra */
+    margin: 0 auto;  /* Centra la imagen */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
 }
+
+/* Ajuste específico para pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-info__pic {
+        max-width: 90%;  /* Reduce el tamaño en móviles */
+        height: auto;  /* Mantiene la proporción */
+    }
+}
+
+
+
+
 
 
 .about-info__text {
