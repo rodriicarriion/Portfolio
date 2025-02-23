@@ -4083,7 +4083,12 @@ img.u-pull-left {
     font-weight : 300;
     line-height : var(--vspace-1_25);
     color       : var(--color-text-light);
+    
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px; /* Espaciado opcional entre elementos */
 }
+
 
 .contact-links a,
 .contact-social a {
@@ -4108,12 +4113,19 @@ img.u-pull-left {
 }
 
 .contact-social li::after {
-    content : ",  ";
+    content : "";
 }
 
 .contact-social li:last-child::after {
     display : none;
 }
+
+.contact-bottom .contact-block:nth-child(2) {
+    position: relative;
+    left: -130px; /* Ajusta este valor según lo necesites */
+}
+
+
 
 .contact-btn {
     margin-left  : auto;
